@@ -6,6 +6,9 @@
 - 快捷打开书签栏
 - 搜索书签
 
+## 截图
+![image](https://github.com/momodexuyuan/bookmarks/tree/master/image/1.png)
+
 ## 构建步骤
 
 ``` bash
@@ -23,3 +26,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## 参考资料
+- [chrome 开发文档](http://open.chrome.360.cn/extension_dev/overview.html)
+- [iBookmark 收藏夹](https://github.com/0326/iBookmark)
