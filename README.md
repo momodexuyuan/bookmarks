@@ -7,7 +7,7 @@
 - 搜索书签
 
 ## 截图
-![image](https://github.com/momodexuyuan/bookmarks/tree/master/image/1.png)
+![image](https://github.com/momodexuyuan/bookmarks/blob/master/image/1.png)
 
 ## 构建步骤
 
