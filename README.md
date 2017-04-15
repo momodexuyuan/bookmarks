@@ -8,6 +8,7 @@
 
 ## 截图
 ![image](https://github.com/momodexuyuan/bookmarks/blob/master/image/1.png)
+![image](https://github.com/momodexuyuan/bookmarks/blob/master/image/2.png)
 
 ## 构建步骤
 

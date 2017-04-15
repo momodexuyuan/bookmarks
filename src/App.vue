@@ -12,7 +12,6 @@
                      @input="search"
                      style="margin-bottom: 0" />
     </mu-appbar>
-    <router-view></router-view>
     <mu-row class="content"
             gutter>
       <mu-list>
@@ -20,6 +19,15 @@
                       :title="item.title"
                       :key="index"
                       @click="selectBookmark(index)">
+          <mu-avatar v-if="item.hasOwnProperty('url')"
+                     :src="'chrome://favicon/'+  item.url"
+                     class="web-icon"
+                     slot="leftAvatar" />
+  
+          <mu-avatar v-else="item.hasOwnProperty('url')"
+                     icon="folder"
+                     slot="leftAvatar" />
+  
           <mu-icon v-show="item.hasOwnProperty('children')"
                    value="chevron_right"
                    slot="right" />
@@ -48,6 +56,7 @@ export default {
     getTree() {
       return new Promise(function (resolve, reject) {
         chrome.bookmarks.getTree((tree) => {
+          console.log(tree)
           resolve(tree[0].children)
         })
       })
@@ -74,11 +83,14 @@ export default {
         this.index.push(index)
         this.tree = marks.children
         this.deep++
+      } else {
+        chrome.tabs.create({
+          url: marks.url,
+          selected: true
+        })
       }
     },
     back() {
-
-      console.log(this.index)
       this.getTree().then(data => {
         let tree = data
 
@@ -123,5 +135,11 @@ body {
 
 .content {
   padding-top: 56px;
+}
+
+.web-icon img {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
 }
 </style>

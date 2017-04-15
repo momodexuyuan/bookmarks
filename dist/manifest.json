@@ -8,6 +8,8 @@
         "default_popup": "index.html"
     },
     "permissions": [
-        "bookmarks"
+        "bookmarks",
+        "tabs",
+        "chrome://favicon/"
     ]
 }
