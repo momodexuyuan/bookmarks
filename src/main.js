@@ -4,7 +4,7 @@ import router from './router'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
-import 'muse-ui/dist/theme-teal.css'
+import 'muse-ui/dist/theme-carbon.css'
 
 import 'material-design-icons/iconfont/material-icons.css'
 Vue.use(MuseUI)

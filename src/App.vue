@@ -110,7 +110,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 * {
   margin: 0;
   padding: 0;
@@ -141,5 +141,22 @@ body {
   width: auto !important;
   height: auto !important;
   border-radius: 0 !important;
+}
+
+.appbar-search-field{
+  color: #FFF;
+  margin-bottom: 0;
+  &.focus-state {
+    color: #FFF;
+  }
+  .mu-text-field-hint {
+    color: fade(#FFF, 54%);
+  }
+  .mu-text-field-input {
+    color: #FFF;
+  }
+  .mu-text-field-focus-line {
+    background-color: #FFF;
+  }
 }
 </style>

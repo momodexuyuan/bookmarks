@@ -8,26 +8,29 @@
 
 ## 截图
 ![image](https://github.com/momodexuyuan/bookmarks/blob/master/image/1.png)
-![image](https://github.com/momodexuyuan/bookmarks/blob/master/image/2.png)
 
-## 构建步骤
+## 开发
+- 安装依赖并启动监听
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 开发时监听变化
+npm run watch
+```
+- 打开chrome开发者模式
+- 点击"加载已解压的拓展程序"，加载 /dist 文件夹
 
-# build for production with minification
+
+## 构建
+
+``` bash
+# 编译
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
 ## 参考资料
+- [muse-ui](http://www.muse-ui.org)
 - [chrome 开发文档](http://open.chrome.360.cn/extension_dev/overview.html)
 - [iBookmark 收藏夹](https://github.com/0326/iBookmark)
